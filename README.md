@@ -10,3 +10,4 @@ Quienes Trabajaron
   - Francisco Parada
   - Rodrigo Candia G
   - Felipe Chepilla R
+  - Javiera Carvajal R
