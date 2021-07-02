@@ -3,7 +3,7 @@
 // Datos admin SQL
 $servidor = "localhost";
 $usuario  = "root";
-$password = "andres10";
+$password = "";
 $database = "paginaDIICC";
 
 // Crear conexión
