@@ -210,13 +210,13 @@
                             $resultado = mysqli_query($conexion, $sql);
                             while ($mostrar = mysqli_fetch_array($resultado)) {
                             ?>
-                                <div class="card mb-5" style="width: 100%;">
+                                <div class="card mb-3" style="width: 100%; height: 200px;">
                                     <div class="row w-100">
                                         <?php echo '<a href="noticias-detalle.php?id=' . $mostrar["id"] . '">'; ?>
-                                        <div class="col-md-4">
-                                            <img src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>">
+                                        <div class="col-md-3">
+                                            <img style="width: 200px; height: 200px;" src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>">
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-md-9">
                                             <div class="let card-body">
                                                 <h4 class="card-title"><?php echo $mostrar['titulo']; ?> </h4>
                                                 <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
