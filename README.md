@@ -8,3 +8,7 @@ Quienes Trabajaron
 
 - 1° Semestre 2021
   - Francisco Parada
+  - Rodrigo Candia G
+  - Felipe Chepilla R
+  - Javiera Carvajal R
+  - Ignacio Almonte G
