@@ -219,8 +219,9 @@
                                         <div class="col-md-9">
                                             <div class="let card-body">
                                                 <h4 class="card-title"><?php echo $mostrar['titulo']; ?> </h4>
-                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><?php echo $mostrar['descripcion']; ?></p>
                                                 <p class="card-text"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p>
+                                                <p class="card-text"><small class="text-muted"><?php echo "Autor: ",$mostrar['autor_noticia']; ?></small></p>
                                             </div>
                                         </div>
                                         <?php '</a>' ?>
