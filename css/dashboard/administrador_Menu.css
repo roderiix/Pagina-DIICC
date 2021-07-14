@@ -77,11 +77,12 @@
 		background: rgba(0,0,0,0.5);
 		backdrop-filter: blur(4px);
 		width: 100%;
-		height: 100vh;
+		height: 200vh;
 		top: 0;left: 0;
 		transition: all 500ms ease;
 		opacity: 0;
 		visibility: hidden;
+		z-index: 9999;
 	}
 	#btn-menu:checked ~ .container-menu{
 		opacity: 1;
@@ -91,12 +92,12 @@
 		width: 100%;
 		max-width: 250px;
 		background: rgba(0,0,0,0.8);
-		height: 100vh;
+		height: 200vh;
 		position: relative;
 		transition: all 500ms ease;
 		transform: translateX(-100%);
-		z-index: 9999;
 	}
+
 	#btn-menu:checked ~ .container-menu .cont-menu{
 		transform: translateX(0%);
 	}
@@ -129,7 +130,7 @@
 		position:relative;
 		width: 90%;
 		height: 100%;
-		background: rgb(185, 180, 180);
+		background: rgb(238, 238, 238);
 		margin: auto;
 		margin-top: -270px;
 		border-radius: 15px;
@@ -140,16 +141,38 @@
 
 	.container-Noticias{
 		margin: auto;
-		padding-top: 50px;
+		padding-top: 40px;
 		padding-bottom: 50px;
 	}
+	.container-boton{
+		padding-bottom: 25px;
+		text-align: right;
+		width: 90%;
+		margin: auto;
+	}
+	.container-boton .btn{
+		width: 150px;
+		height: 35px;
+		background-color: steelblue;
+	}
+	.container-boton .btn:hover{
+		transform: scale(1.15);
+    	cursor: pointer;
+    	transition: 2s;
+		background-color: rgb(123, 216, 245);
+	} 
+
 	.table{
 		width: 90%;
 		margin: auto;
-		border: solid 3px black;
+		
 	}
 	.table td{
 		padding-top: 10px;
+	}
+
+	.tbody{
+		background-color: rgba(216, 216, 216, 0.8);
 	}
 
 	.fondo img{
