@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<?php
+    session_start();
+    $file = __FILE__;
+    include_once "../include/functions.php";
+    include_once "../config/config.php";
+?>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Departamento de Informatica</title>
+    <link rel="stylesheet" href="../css/dashboard/administrador_Menu.css">
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/bootstrap.min.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/animate.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/meanmenu.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/magnific-popup.css");  ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/owl.carousel.min.css");  ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/font-awesome.min.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/et-line-icon.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/reset.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/ionicons.min.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/material-design-iconic-font.min.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/responsive.css"); ?>>
+    <script src=<?php echo fromroot($file, "js/vendor/modernizr-2.8.3.min.js"); ?>></script>
+</head>
+
+<body>
+    <div class="container-contenido">
+        <header class="header">
+            <div class="container">
+                <div class="btn-menu">
+                    <label for="btn-menu">☰</label>
+                </div>
+                <div class="logo">
+                    <img src="../img/logo/logoudablanco2.png" alt="">
+                </div>
+                <nav class="menu">
+                    <a href="AdministradorMenu.html">Inicio</a>
+                    <a href="#">Mi perfil</a>
+                    <a href="#">Desconectarse</a>
+                </nav>
+            </div>
+        </header>
+        <div class="capa"></div>
+        <!--	--------------->
+        <input type="checkbox" id="btn-menu">
+        <div class="container-menu">
+            <div class="cont-menu">
+                <nav>
+                    <a href="AdminGestorNoticias.php">Noticias</a>
+                    <a href="#">Publicaciones</a>
+                    <a href="#">Proyectos</a>
+                    <a href="#">Bolsa de trabajo</a>
+                    <a href="#">Academicos</a>
+                    <a href="#">Funcionarios</a>
+                </nav>
+                <label for="btn-menu">✖️</label>
+            </div>
+        </div>
+        <div class="fondo">
+            <img src="../img/dpto/dpto.jpg" alt="">
+        </div>
+        <div class="container-center rounded">
+            <section class="seccion">
+                <div class="container-Noticias">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Imagen</th>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Fecha de publicacion</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $sql = "select * from noticias ORDER BY id DESC"; // mejorar query falta nombre del que subio la noticia
+                            $resultado = mysqli_query($conexion, $sql);
+                            while ($mostrar = mysqli_fetch_array($resultado)) {
+                            ?>
+                            <tr>
+                                <td><img style="width: 150px; height: 150px; padding-left:25px;" src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></td>
+                                <td><h4 class="card-title" style="text-align: center;"><?php echo $mostrar['titulo']; ?> </h4></td>
+                                <td><p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p></td>
+                                <td><p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo "Autor: ",$mostrar['correo']; ?></small></p></td>
+                                <td>
+								    <div class="btn-group btn-group-sm" role="group">
+									    <a class="btn btn-secondary btn-sm" href="#">Modificar</a>
+									    <a class="btn btn-danger btn-sm" href="#">Eliminar</a>
+								    </div>
+								</td>                                
+                            </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+
+<script src=<?php echo fromroot($file, "js/vendor/jquery-1.12.0.min.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/bootstrap.min.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/jquery.meanmenu.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/jquery.magnific-popup.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/ajax-mail.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/owl.carousel.min.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/jquery.mb.YTPlayer.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/jquery.nicescroll.min.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/plugins.js"); ?>></script>
+<script src=<?php echo fromroot($file, "js/main.js"); ?>></script>
+
+</html>
