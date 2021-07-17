@@ -65,7 +65,7 @@ include_once "../config/config.php";
             <section class="seccion">
                 <div class="container-Noticias">
                     <div class="container-boton">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addcourse-modal">Añadir Noticias</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addcourse-modal">Añadir Publicacion</button>
                     </div>
                     <table class="table">
                         <thead style="background-color: steelblue;">
@@ -73,13 +73,15 @@ include_once "../config/config.php";
                                 <th scope="col">Imagen</th>
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Fecha de publicacion</th>
-                                <th scope="col">Correo</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Revision</th>
+                                <th scope="col">Acceso</th>
                                 <th scope="col">Accion</th>
                             </tr>
                         </thead>
                         <tbody class="tbody">
                             <?php
-                            $sql = "select * from noticias ORDER BY id DESC"; // mejorar query falta nombre del que subio la noticia
+                            $sql = "select * from publicaciones ORDER BY id DESC"; // mejorar query falta nombre del que subio la noticia
                             $resultado = mysqli_query($conexion, $sql);
                             while ($mostrar = mysqli_fetch_array($resultado)) {
                             ?>
@@ -89,10 +91,16 @@ include_once "../config/config.php";
                                         <h4 class="card-title" style="text-align: center;"><?php echo $mostrar['titulo']; ?> </h4>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p>
+                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['Fecha']; ?></small></p>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo "Autor: ", $mostrar['correo']; ?></small></p>
+                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['Autores']; ?></small></p>
+                                    </td>
+                                    <td>
+                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['Revision']; ?></small></p>
+                                    </td>
+                                    <td>
+                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['Acceso']; ?></small></p>
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
