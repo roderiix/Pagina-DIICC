@@ -13,6 +13,7 @@
         <?php include_once "../include/header2.php";?>
         <!-- HEADER -->
          <!-- Blog Start -->
+
         <div class="blog-details-area pt-150 pb-140">
             <div class="container">
                 <div class="row">
@@ -25,150 +26,430 @@
                                 <h2>Diplomado en Gestión de Tecnologías de Información</h2>
                                 <br>
                                 <h3>Información general:</h3>
-                                  <p>  
-                                    <table border="0" cellspacing="0" cellpadding="0">
-                                       <tbody>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>GRADO</strong>:</p>
-                                        </td>
-                                        <td valign="top"><strong>Magister en Tecnologías de la Información e Innovación.</strong><p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                <br >
+                                <table id="tablepress-5" class="tablepress tablepress-id-5">
+                                        <tbody class="row-hover">
+                                                <tr style="border-bottom: solid #E5E8E8 ;"class="row-1 odd">
+                                                    <td valign="top" class="column-1">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                            <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">GRADO:</h5>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td valign="top" class="column-2">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-10">
+                                                                    <div class="card-body">
+                                                                         <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">Magister en Tecnologías de la Información e Innovación.<br> </small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: solid #E5E8E8 ;" class="row-2 even">
+                                                    <td valign="top" class="column-1"> 
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">POSTÍTULOS INTERMEDIOS: </h5>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td valign="top" class="column-2">
+                                                    <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-10">
+                                                                    <div class="card-body">
+                                                                        <p style="margin-left: 20px;"class="card-text"><small class="text-muted">Diplomado en Gestión de Tecnologías de Información; Diplomado en Gestión de Innovación y Emprendimiento; Diplomados en Procesos Integrales de Software.<br> </small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: solid #E5E8E8 ;" class="row-3 odd">
+                                                    <td valign="top" class="column-1">
+                                                         <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                               
+                                                                <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">OBJETIVO:</h5>
+                                                                        
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td valign="top" class="column-2">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-10">
+                                                                    <div class="card-body">
+                                                                        <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">El objetivo del programa es entregar a los estudiantes un conjunto de conocimientos teóricos y prácticos en tecnologías de información, innovación y emprendimiento&nbsp; para poder gestionar soluciones tecnológicas a problemáticas organizaciones públicas y privadas.<br> </small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: solid #E5E8E8 ;" class="row-4 even">
+                                                    <td valign="top" class="column-1">
+                                                         <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">PERFIL DEL GRADUADO:</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td valign="top" class="column-2"> 
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-10">
+                                                                    <div class="card-body">
+                                                                        <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted"> Los graduados del programa de Magíster en Tecnologías de la Información e Innovación serán profesionales de alto nivel de especialización, con capacidad para emprender proyectos innovadores en la adopción y uso de TICs en las organizaciones, proponiendo y evaluando soluciones informáticas novedosas para problemas de mediana y alta complejidad en relación con la estrategia de la empresa.</small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: solid #E5E8E8 ;" class="row-5 odd">
+                                                    <td valign="top" class="column-1">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">PERFIL OCUPACIONAL:</h5>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td valign="top" class="column-2">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-10">
+                                                                    <div class="card-body">
+                                                                        <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted"> El egresado del Programa de Magister en Tecnologías de la Información e Innovación estará capacitado para desempeñarse en cualquier organización pública o privada que requiera gestionar la adopción y el uso de las tecnologías de información y comunicación para realizar sus operaciones y toma de decisiones. En particular, el magister podrá desenvolverse en jefaturas y gerencias de TICs e Innovación.<br></small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr style="border-bottom: solid #E5E8E8 ;" class="row-6 even">
+                                                    <td valign="top" class="column-1">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-8">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">DURACIÓN:</h5>
+                                                                       
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td valign="top" class="column-2">
+                                                        <div class="card mb-3" style="max-width: 640px;">
+                                                            <div class="row g-0">
+                                                                <div class="col-md-10">
+                                                                    <div class="card-body">
+                                                                        <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">4 Semestres<br></small></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                        <tr style="border-bottom: solid #E5E8E8 ;" class="row-7 odd">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">MODALIDAD:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">Especial<br></small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>POSTÍTULOS INTERMEDIOS</strong>:</p>
-                                        </td>
-                                        <td valign="top"><strong>Diplomado en Gestión de Tecnologías de Información; Diplomado en Gestión de Innovación y Emprendimiento; Diplomados en Procesos Integrales de Software</strong><p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                           <tr style="border-bottom: solid #E5E8E8 ;" class="row-8 even">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">HORARIOS:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">Viernes 19-23 / Sábados 9-18 <br></small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>OBJETIVO</strong>:</p>
-                                        </td>
-                                        <td valign="top">El objetivo del programa es entregar a los estudiantes un conjunto de conocimientos teóricos y prácticos en tecnologías de información, innovación y emprendimiento&nbsp; para poder gestionar soluciones tecnológicas a problemáticas organizaciones públicas y privadas.<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                         <tr style="border-bottom: solid #E5E8E8 ;"class="row-9 odd">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">CREDITOS:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 540px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">60 SCT (Sistema de Créditos Transferibles)/1440 hrs.<br></small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>PERFIL DEL GRADUADO</strong>:</p>
-                                        </td>
-                                        <td valign="top">Los graduados del programa de Magíster en Tecnologías de la Información e Innovación serán profesionales de alto nivel de especialización, con capacidad para emprender proyectos innovadores en la adopción y uso de TICs en las organizaciones, proponiendo y evaluando soluciones informáticas novedosas para problemas de mediana y alta complejidad en relación con la estrategia de la empresa.<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                          <tr style="border-bottom: solid #E5E8E8 ;" class="row-10 even">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 540px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">REQUISITOS DE POSTULACIÓN:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p style="margin-left: 20px;" class="card-title">1.- Los postulantes al programa de magister deberán cumplir uno de estos requisitos:</p>
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">a.- Estar en posesión ya sea del grado académico de Licenciado en Ciencias de la Ingeniería, o poseer otro grado académico o título profesional universitario en el área, con un mínimo de cuatro años de estudio.<br></small></p>
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">b.- De existir un postulante con título profesional universitario no afín, con un mínimo de cuatro años de estudio, el Comité Académico del Programa podrá autorizar su ingreso luego de analizar su experiencia laboral en el área<br></small></p>
+                                                                <p style="margin-left: 20px;" class="card-title">2.- Los postulantes que no cumplan con los requisitos para ingresar al programa de magister podrán postular a cursar cualquiera de los diplomados del programa, situación que será resuelta por el Comité Académico del programa luego de revisar sus antecedentes.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>PERFIL OCUPACIONAL</strong>:</p>
-                                        </td>
-                                        <td valign="top">El egresado del Programa de Magister en Tecnologías de la Información e Innovación estará capacitado para desempeñarse en cualquier organización pública o privada que requiera gestionar la adopción y el uso de las tecnologías de información y comunicación para realizar sus operaciones y toma de decisiones. En particular, el magister podrá desenvolverse en jefaturas y gerencias de TICs e Innovación.<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                         <tr style="border-bottom: solid #E5E8E8 ;" class="row-11 odd">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">DIPLOMADOS:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">También es posible cursar sólo los Diplomados individualmente.<br></small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>DURACIÓN</strong>:</p>
-                                        </td>
-                                        <td valign="top">4 Semestres<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                         <tr style="border-bottom: solid #E5E8E8 ;" class="row-12 even">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">ARANCELES:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                               <small class="text-muted">
+                                                                    <li style="list-style-type: none; margin-left: 20px;" ><strong>Básico:</strong>&nbsp;$120.000 al año (dos años)</li>
+                                                                    <li style="list-style-type: none; margin-left: 20px;"><strong>Matrícula:</strong>&nbsp;$4.500.000.- el programa completo.</li><br>
+                                                                </small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>MODALIDAD</strong>:</p>
-                                        </td>
-                                        <td valign="top">Especial<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                         <tr style="border-bottom: solid #E5E8E8 ;" class="row-13 odd">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">DIPLOMADOS:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                               <small class="text-muted">
+                                                                    <li style="list-style-type: none; margin-left: 20px;"><strong>Básico:</strong>&nbsp;$80.000</li>
+                                                                    <li style="list-style-type: none; margin-left: 20px;"><strong>Matrícula:</strong>&nbsp;$1.400.000.- el programa completo.</li> 
+                                                                    <br>
+                                                                    <li style="list-style-type: none; margin-left:20px;">Descuento 10% en arancel de matrícula por pago al contado.</li>
+                                                                    <li style="list-style-type:none;margin-left: 20px;">Descuento 10% en arancel de matrícula para funcionarios de servicios públicos.</li>
+                                                                    <br>
+                                                                </small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>HORARIOS</strong>:</p>
-                                        </td>
-                                        <td valign="top">Viernes 19-23 / Sábados 9-18<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                             <tr style="border-bottom: solid #E5E8E8 ;" class="row-14 even">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">INICIO TENTATIVO:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">Abril – Mayo 2017 (mínimo 10 matriculados)<br></small></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>CREDITOS</strong>:</p>
-                                        </td>
-                                        <td valign="top">60 SCT (Sistema de Créditos Transferibles)/1440 hrs.<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                         <tr style="border-bottom: solid #E5E8E8 ;" class="row-15 odd">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">POSTULACIONES:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                <p id="card-text" style="margin-left: 20px;"class="card-text"><small class="text-muted">– Plazo: Marzo<br></small></p>
+                                                                <p style="margin-left:20px;">–&nbsp;<a href="http://www.diicc.uda.cl/archivos/magister/form_postulacion_mag_pro.docx" target="_blank" rel="noopener">Formulario de Postulación</a>&nbsp;<a href="http://www.diicc.uda.cl/archivos/magister/form_postulacion_mag_pro.docx" target="_blank" rel="noopener"><img src="http://www.diicc.uda.cl/images/icono_word.gif" width="20" height="20" border="0"></a></p>
+                                                                <p style="margin-left:20px;">– Enviar a:&nbsp;<a href="mailto:dante.carrizo@uda.cl">dante.carrizo@uda.cl</a></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>REQUISITOS DE POSTULACIÓN</strong>:</p>
-                                        <p align="right"><strong>&nbsp;</strong></p>
-                                        </td>
-                                        <td valign="top">1.- Los postulantes al programa de magister deberán cumplir uno de estos requisitos:<p></p>
-                                        <p>a.- Estar en posesión ya sea del grado académico de Licenciado en Ciencias de la Ingeniería, o poseer otro grado académico o título profesional universitario en el área, con un mínimo de cuatro años de estudio.</p>
-                                        <p>b.- De existir un postulante con título profesional universitario no afín, con un mínimo de cuatro años de estudio, el Comité Académico del Programa podrá autorizar su ingreso luego de analizar su experiencia laboral en el área.</p>
-                                        <p>2.- Los postulantes que no cumplan con los requisitos para ingresar al programa de magister podrán postular a cursar cualquiera de los diplomados del programa, situación que será resuelta por el Comité Académico del programa luego de revisar sus antecedentes.</p>
-                                        <p><strong>&nbsp;</strong></p></td>
+                                         <tr style="border-bottom: solid #E5E8E8 ;"class="row-16 even">
+                                            <td valign="top" class="column-1">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-8">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">MÁS INFORMACIÓN:</h5>
+                                                              
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td valign="top" class="column-2">
+                                                <div class="card mb-3" style="max-width: 640px;">
+                                                    <div class="row g-0">
+                                                        <div class="col-md-10">
+                                                            <div class="card-body">
+                                                                 <p><small class="text-muted">&nbsp;&nbsp; &nbsp; &nbsp; –&nbsp;<a href="mailto:%20%3Cscript%20type='text/javascript'%3E%20%3C!--%20var%20prefix%20=%20'ma'%20+%20'il'%20+%20'to';%20var%20path%20=%20'hr'%20+%20'ef'%20+%20'=';%20var%20addy22896%20=%20'infodiicc'%20+%20'@';%20addy22896%20=%20addy22896%20+%20'uda'%20+%20'.'%20+%20'cl';%20document.write('%3Ca%20'%20+%20path%20+%20'\''%20+%20prefix%20+%20':'%20+%20addy22896%20+%20'\'%3E');%20document.write(addy22896);%20document.write('%3C\/a%3E');%20//--%3E\n%20%3C/script%3E%3Cscript%20type='text/javascript'%3E%20%3C!--%20document.write('%3Cspan%20style=\'display:%20none;\'%3E');%20//--%3E%20%3C/script%3EEsta%20direcci%C3%B3n%20de%20correo%20electr%C3%B3nico%20est%C3%A1%20siendo%20protegida%20contra%20los%20robots%20de%20spam.%20Necesita%20tener%20JavaScript%20habilitado%20para%20poder%20verlo.%20%3Cscript%20type='text/javascript'%3E%20%3C!--%20document.write('%3C/');%20document.write('span%3E');%20//--%3E%20%3C/script%3E" target="_blank" rel="noopener">&nbsp;</a><a href="mailto:infodiicc@uda.cl">infodiicc@uda.cl</a></small></p>
+                                                                <p class="card-text"><small class="text-muted"><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong>– Fono:(52)2255555</small></p>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
                                         </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>DIPLOMADOS:</strong></p>
-                                        </td>
-                                        <td valign="top">También es posible cursar sólo los Diplomados individualmente.<p></p>
-                                        <p><strong>&nbsp;</strong></p></td>
-                                        </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>ARANCELES:</strong></p>
-                                        </td>
-                                        <td valign="top"><strong>Magister:</strong><p></p>
-                                        <ul>
-                                        <li style="list-style-type: none;">
-                                        <ul>
-                                        <li style="list-style-type: none;">
-                                        <ul>
-                                        <li><strong>Básico:</strong>&nbsp;$120.000 al año (dos años)</li>
-                                        <li><strong>Matrícula:</strong>&nbsp;$4.500.000.- el programa completo.</li>
-                                        </ul>
-                                        </li>
-                                        </ul>
-                                        </li>
-                                        </ul>
-                                        <div>
-                                        <p><strong>Diplomados:</strong></p>
-                                        <ul>
-                                        <li style="list-style-type: none;">
-                                        <ul>
-                                        <li style="list-style-type: none;">
-                                        <ul>
-                                        <li><strong>Básico:</strong>&nbsp;$80.000</li>
-                                        <li><strong>Matrícula:</strong>&nbsp;$1.400.000.- el programa completo.</li>
-                                        </ul>
-                                        </li>
-                                        </ul>
-                                        </li>
-                                        </ul>
-                                        <div></div>
-                                        <ul>
-                                        <li>Descuento 10% en arancel de matrícula por pago al contado.</li>
-                                        <li>Descuento 10% en arancel de matrícula para funcionarios de servicios públicos.</li>
-                                        </ul>
-                                        </div>
-                                        </td>
-                                        </tr>
-                                        <tr>
-                                        <td style="text-align: center;" valign="top"><strong>INICIO TENTATIVO:</strong></td>
-                                        <td valign="top">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Abril – Mayo 2017 (mínimo 10 matriculados)</td>
-                                        </tr>
-                                        <tr>
-                                        <td style="text-align: center;" valign="top"><strong>POSTULACIONES:</strong></td>
-                                        <td valign="top">– Plazo: Marzo<p></p>
-                                        <p>–&nbsp;<a href="http://www.diicc.uda.cl/archivos/magister/form_postulacion_mag_pro.docx" target="_blank" rel="noopener">Formulario de Postulación</a>&nbsp;<a href="http://www.diicc.uda.cl/archivos/magister/form_postulacion_mag_pro.docx" target="_blank" rel="noopener"><img src="http://www.diicc.uda.cl/images/icono_word.gif" width="20" height="20" border="0"></a></p>
-                                        <p>– Enviar a:&nbsp;<a href="mailto:dante.carrizo@uda.cl">dante.carrizo@uda.cl</a></p></td>
-                                        </tr>
-                                        <tr>
-                                        <td valign="top">
-                                        <p style="text-align: center;" align="right"><strong>MÁS INFORMACIÓN</strong>:</p>
-                                        <p align="right"><strong>&nbsp;</strong></p>
-                                        </td>
-                                        <td valign="top">
-                                        <div>&nbsp;&nbsp; &nbsp; &nbsp; –&nbsp;<a href="mailto:%20%3Cscript%20type='text/javascript'%3E%20%3C!--%20var%20prefix%20=%20'ma'%20+%20'il'%20+%20'to';%20var%20path%20=%20'hr'%20+%20'ef'%20+%20'=';%20var%20addy22896%20=%20'infodiicc'%20+%20'@';%20addy22896%20=%20addy22896%20+%20'uda'%20+%20'.'%20+%20'cl';%20document.write('%3Ca%20'%20+%20path%20+%20'\''%20+%20prefix%20+%20':'%20+%20addy22896%20+%20'\'%3E');%20document.write(addy22896);%20document.write('%3C\/a%3E');%20//--%3E\n%20%3C/script%3E%3Cscript%20type='text/javascript'%3E%20%3C!--%20document.write('%3Cspan%20style=\'display:%20none;\'%3E');%20//--%3E%20%3C/script%3EEsta%20direcci%C3%B3n%20de%20correo%20electr%C3%B3nico%20est%C3%A1%20siendo%20protegida%20contra%20los%20robots%20de%20spam.%20Necesita%20tener%20JavaScript%20habilitado%20para%20poder%20verlo.%20%3Cscript%20type='text/javascript'%3E%20%3C!--%20document.write('%3C/');%20document.write('span%3E');%20//--%3E%20%3C/script%3E" target="_blank" rel="noopener">&nbsp;</a><a href="mailto:infodiicc@uda.cl">infodiicc@uda.cl</a></div>
-                                        <p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong>–Fono: (52)2255555</p></td>
-                                        </tr>
-                                        </tbody>
-                                        </table>
+                                    </tbody>
+                                </table>
+                                  
                                 <br>
                                 <img src="http://www.diicc.uda.cl/images/mp.png" alt="" border="0">
                                 <br>
@@ -296,7 +577,10 @@
                            
                             <div class="single-blog-widget mb-47">
                                 <div class="single-blog-banner">
-                                    <a href=<?php echo fromroot($file, "blog-details.html"); ?> id="blog"><img src=<?php echo fromroot($file, "img/blog/blog-img.jpg"); ?> alt="blog" ></a>
+                                    <a href=" https://docs.google.com/forms/d/e/1FAIpQLSdoJ4pKZWImnq67HAen8p9rUejfvMxjNRzKr3Btfl0Bb8QriA/viewform?embedded=true"
+                                width="300" height="340" frameborder="0" marginheight="0"
+                                marginwidth="0" id="blog"><img src="../img/blog/blog-img.jpg" alt="blog" > 
+
                                     <h2><br> <br> </h2> 
                                 </div>
                             </div>
