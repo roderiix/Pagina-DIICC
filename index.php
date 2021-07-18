@@ -335,63 +335,45 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-blog">
-                            <div class="blog-img">
-                                <a href="#"><img src="img/blog/blog1.jpg" alt="blog"></a>
-                                <div class="blog-hover">
-                                    <a href="#"><i class="fa fa-link"></i></a>
+                <?php
+                        $sql = "SELECT * FROM `publicaciones` ORDER BY fecha ASC LIMIT 3"; // mejorar query falta nombre del que subio la noticia
+                        $resultado = mysqli_query($conexion, $sql);
+                        while ($mostrar = mysqli_fetch_array($resultado)){
+                            echo sprintf(
+                                '
+                                <div class="col-md-4 col-sm-6 col-xs-12">
+                                    <div class="single-blog">
+                                        <div class="blog-img">
+                                            <a href="%s"><img src="data:image/jpg;base64,%s" alt="blog"></a>
+                                            <div class="blog-hover">
+                                                <a href="%s"><i class="fa fa-link"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-top">
+                                                <p>Escrito por %s / %s</p>
+                                            </div>
+                                            <div class="blog-bottom">
+                                                <h2><a href="%s">%s</a></h2>
+                                                <a href="%s">Leer más...</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-top">
-                                    <p>Escrito por Pedro Martínez / 20-01-2020</p>
-                                </div>
-                                <div class="blog-bottom">
-                                    <h2><a href="#">TÍTULO DE LA PUBLICACIÓN</a></h2>
-                                    <a href="#">Leer más...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-blog">
-                            <div class="blog-img">
-                                <a href="#"><img src="img/blog/blog2.png" alt="blog"></a>
-                                <div class="blog-hover">
-                                    <a href="#"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-top">
-                                    <p>Escrito por Pedro Martínez / 20-01-2020</p>
-                                </div>
-                                <div class="blog-bottom">
-                                    <h2><a href="#">TÍTULO DE LA PUBLICACIÓN</a></h2>
-                                    <a href="#">Leer más...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 hidden-sm col-xs-12">
-                        <div class="single-blog">
-                            <div class="blog-img">
-                                <a href="#"><img src="img/blog/blog3.jpg" alt="blog"></a>
-                                <div class="blog-hover">
-                                    <a href="#"><i class="fa fa-link"></i></a>
-                                </div>
-                            </div>
-                            <div class="blog-content">
-                                <div class="blog-top">
-                                    <p>Escrito por Pedro Martínez / 20-01-2020</p>
-                                </div>
-                                <div class="blog-bottom">
-                                    <h2><a href="#">TÍTULO DE LA PUBLICACIÓN</a></h2>
-                                    <a href="#">Leer más...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                ',
+                                $mostrar['acceso'],
+                                base64_encode($mostrar["imagen"]),
+                                $mostrar['acceso'],
+                                $mostrar['autor'],
+                                $mostrar['fecha'],
+                                $mostrar['acceso'],
+                                $mostrar['titulo'],
+                                $mostrar['acceso']
+                            );
+                        }
+
+                    ?>
+                    
                 </div>
             </div>
         </div>
