@@ -2260,7 +2260,11 @@ textarea {
     background-color: #ebebeb;
 }
 #malla {
+    width: 100%;
     margin-bottom: 100px;
+}
+#malla-dialog{
+    width: 100% !important;
 }
 /*----------------------------------------*/ 
 /*  10. Subscribe CSS
