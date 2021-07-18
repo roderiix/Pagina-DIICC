@@ -22,6 +22,7 @@ include_once "../config/config.php";
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/ionicons.min.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/material-design-iconic-font.min.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/responsive.css"); ?>>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src=<?php echo fromroot($file, "js/vendor/modernizr-2.8.3.min.js"); ?>></script>
 </head>
 
@@ -89,15 +90,15 @@ include_once "../config/config.php";
                                         <h4 class="card-title" style="text-align: center;"><?php echo $mostrar['nombre']; ?> </h4>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['año']; ?></small></p>
+                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['year']; ?></small></p>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo  $mostrar['link']; ?></small></p>
+                                        <p class="card-text" style="text-align: center;"><a href="<?php echo  $mostrar['link']; ?>"><i class="bi bi-link-45deg"></i></a></p>
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
-                                            <a class="btn btn-secondary btn-sm" style="color:seagreen;" href="#">Modificar</a>
-                                            <a class="btn btn-danger btn-sm" href="#">Eliminar</a>
+                                            <a class="btn btn-secondary"style="color:seagreen;" href="#"><i class="bi bi-pencil"></i></a>
+                                            <a class="btn btn-danger" href="#"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>

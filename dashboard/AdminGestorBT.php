@@ -22,6 +22,7 @@ include_once "../config/config.php";
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/ionicons.min.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/material-design-iconic-font.min.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/responsive.css"); ?>>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src=<?php echo fromroot($file, "js/vendor/modernizr-2.8.3.min.js"); ?>></script>
 </head>
 
@@ -74,6 +75,7 @@ include_once "../config/config.php";
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Fecha de publicacion</th>
                                 <th scope="col">Empresa</th>
+                                <th scope="col">Ciudad</th>
                                 <th scope="col">Accion</th>
                             </tr>
                         </thead>
@@ -86,18 +88,21 @@ include_once "../config/config.php";
                                 <tr>
                                     <td style="text-align: center;"><img style="width: 150px; height: 150px; padding-left:25px;" src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></td>
                                     <td>
-                                        <h4 class="card-title" style="text-align: center;"><?php echo $mostrar['titulo']; ?> </h4>
+                                        <h4 class="card-title" style="text-align: center;"><?php echo $mostrar['cargo']; ?> </h4>
                                     </td>
                                     <td>
                                         <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo "Autor: ", $mostrar['Empresas']; ?></small></p>
+                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['empresa']; ?></small></p>
+                                    </td>
+                                    <td>
+                                    <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['ciudad']; ?></small></p>
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
-                                            <a class="btn btn-secondary btn-sm" style="color:seagreen;" href="#">Modificar</a>
-                                            <a class="btn btn-danger btn-sm" href="#">Eliminar</a>
+                                        <a class="btn btn-secondary"style="color:seagreen;" href="#"><i class="bi bi-pencil"></i></a>
+                                            <a class="btn btn-danger" href="#"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>
