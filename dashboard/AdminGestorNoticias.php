@@ -51,7 +51,7 @@ include_once "../include/dashboard/head.php";
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
-                                            <a class="btn btn-secondary"style="color:seagreen;" href="../database/noticias/modificar.php"><i class="bi bi-pencil"></i></a>
+                                            <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarN.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
                                             <a class="btn btn-danger" href="../database/noticias/eliminar.php"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
