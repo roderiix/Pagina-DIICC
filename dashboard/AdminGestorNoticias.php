@@ -49,18 +49,18 @@
                                 <tr>
                                     <td style="text-align: center;"><img style="width: 150px; height: 150px; padding-left:25px;" src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></td>
                                     <td>
-                                        <h4 class="card-title" style="text-align: center;"><?php echo $mostrar['titulo']; ?> </h4>
+                                        <h4 style="text-align: center;"><?php echo $mostrar['titulo']; ?> </h4>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p>
+                                        <p style="text-align: center;"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p>
                                     </td>
                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo "Autor: ", $mostrar['correo']; ?></small></p>
+                                        <p style="text-align: center;"><small class="text-muted"><?php echo "Autor: ", $mostrar['correo']; ?></small></p>
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
-                                            <a class="btn btn-secondary"style="color:seagreen;" href="#"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="#"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarN.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
+                                            <a class="btn btn-danger" href="../database/noticias/eliminar.php"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>

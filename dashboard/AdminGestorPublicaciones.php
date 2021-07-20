@@ -67,8 +67,8 @@
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
-                                            <a class="btn btn-secondary"style="color:seagreen;" href="#"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="#"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-secondary"style="color:seagreen;" href="../database/publicacion/modificar.php"><i class="bi bi-pencil"></i></a>
+                                            <a class="btn btn-danger" href="../database/publicacion/eliminar.php"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>
