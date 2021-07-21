@@ -84,7 +84,7 @@
                             while ($mostrar = mysqli_fetch_array($resultado)) {
                             ?>
                                 <tr>
-                                    <td style="text-align: center;"><img style="width: 150px; height: 150px; padding-left:25px;" src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></td>
+                                <td style="text-align: center;"><img style="width: 150px; height: 150px; padding-left:25px;" src=<?php echo fromroot($file, $mostrar["img_path"]);?>></td>
                                     <td>
                                         <h4 style="text-align: center;"><?php echo $mostrar['titulo']; ?> </h4>
                                     </td>
@@ -101,7 +101,7 @@
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
                                             <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarN.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="../database/noticias/eliminar.php"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-danger" href="../database/noticias/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>
