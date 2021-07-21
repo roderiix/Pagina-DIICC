@@ -153,13 +153,17 @@
 	.container-boton .btn{
 		width: 150px;
 		height: 35px;
-		background-color: steelblue;
+		background-color:#27AE60 ;
+		border-color: #145A32; 
 	}
+
 	.container-boton .btn:hover{
 		transform: scale(1.15);
     	cursor: pointer;
     	transition: 2s;
-		background-color: rgb(123, 216, 245);
+		
+		background-color: #1E8449;
+			color: white;
 	} 
 
 	.table{
@@ -225,3 +229,19 @@
 		width: 90%;
 		margin: auto;
 	}
+	thead th{
+    	color: #FBFCFC;
+    	text-align: center;
+    	background: #000000;
+    	width: 500px;
+	}
+	tbody tr{
+		border-bottom: solid #AAB7B8;
+	}
+
+ 	table {
+       display: block;
+       overflow-x: auto;
+       height: 500px;
+      
+  	}
