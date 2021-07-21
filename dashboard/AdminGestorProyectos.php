@@ -56,7 +56,7 @@
                                         <input style="width: 200px; text-align:center;" id="link" name="link" class="input-text js-input" placeholder="Link" type="text" required>
                                     </div>
                                     <div style="margin-top:30px; text-align: center;" class="container-ingresar">
-                                        <button type="button" class="btn">Ingresar</button>
+                                        <button type="submit" class="btn">Ingresar</button>
                                     </div>
                                 </form>
                                 </div>
@@ -94,8 +94,8 @@
                                     </td>
                                     <td>
                                         <div class="btn-group btn-group-sm" style="text-align: center;" role="group">
-                                            <a class="btn btn-secondary"style="color:seagreen;" href="../database/proyectos/modificar.php"><i class="bi bi-pencil"></i></a>
-                                            <a class="btn btn-danger" href="../database/proyectos/eliminar.php"><i class="bi bi-x-circle"></i></a>
+                                            <a class="btn btn-secondary"style="color:seagreen;" href="../dashboard/modificarPR.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-pencil"></i></a>
+                                            <a class="btn btn-danger" href="../database/proyectos/eliminar.php?id=<?php echo $mostrar['id']; ?>"><i class="bi bi-x-circle"></i></a>
                                         </div>
                                     </td>
                                 </tr>
