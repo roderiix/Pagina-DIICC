@@ -26,8 +26,8 @@ include_once "../include/dashboard/head.php";
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
-                        <form action="../database/noticias/modificar.php" method="post">
-                            <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
+                        <form action="../database/noticias/modificar.php" method="POST" enctype="multipart/form-data">
+                            <input type="hidden" name="id" id="id" <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon1">@</span>
                                 <input type="text" name='titulo' class="form-control" placeholder="Username" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['titulo']); ?>>
