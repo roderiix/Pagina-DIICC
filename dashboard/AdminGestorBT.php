@@ -41,7 +41,7 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                    <form action="../database/trabajo/crear.php" method="POST">
+                                    <form action="../database/trabajo/crear.php" method="POST" enctype="multipart/form-data">
                                         <div style="margin-left: 110px;" class="form-field "><br>
                                             <input   name="imagen" type="file" required>
                                         </div>

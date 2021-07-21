@@ -40,7 +40,7 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                <form action="../database/publicacion/crear.php" method="POST">
+                                <form action="../database/publicacion/crear.php" method="POST" enctype="multipart/form-data">
                                 <div class="modal-body">
                                     <form action="../database/publicacion/crear.php" method="POST">
                                     <div style="margin-left: 110px;" class="form-field "><br>

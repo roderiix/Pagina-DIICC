@@ -26,7 +26,7 @@ include_once "../include/dashboard/head.php";
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
-                        <form class="form" action="../database/trabajo/modificar.php" method="post">
+                        <form class="form" action="../database/trabajo/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
                                 <input class="form-control" type="file" name="img">
