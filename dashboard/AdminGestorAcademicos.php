@@ -42,7 +42,7 @@
                                 </div>
                                 
                                  <div class="modal-body">
-                                    <form action="../database/funcionarios/crea.php" method="POST">
+                                    <form action="../database/funcionarios/crea.php" method="POST" enctype="multipart/form-data">
                                     <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                         <input style="width: 200px; text-align:center;" id="nombre" name="nombre" class="input-text js-input" placeholder="Nombre" type="text" required>
                      
@@ -84,8 +84,6 @@
                                 <th scope="col">Correo</th>
                                 <th scope="col">Fono</th>
                                 <th scope="col">Cargo</th>
-                                <th scope="col">Grado Academico</th>
-                                <th scope="col">Area de Interes</th>
                                 <th scope="col">Imagen</th>
                                 <th scope="col">Acción</th>
 
@@ -111,16 +109,8 @@
                                     <td>
                                         <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['cargo']; ?></small></p>
                                     </td>
-                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['grado_academico']; ?></small></p>
-                                    </td>
-                                     <td>
-                                        <p class="card-text" style="text-align: center;"><small class="text-muted"><?php echo $mostrar['area_interes']; ?></small></p>
-                                    </td>
-                                    
 
-                                    <td style="text-align: center; "><img style="width: 150px; height: 150px; padding-left:25px;" src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></td>
-                                    
+                                    <td style="text-align: center; "><img style="width: 150px; height: 150px; padding-left:25px;" src=<?php echo fromroot($file, $mostrar["img_path"]); ?>></td>                                    
                                     
                                    
                                     <td>

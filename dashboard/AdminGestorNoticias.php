@@ -42,9 +42,9 @@
                                     </div>
                                     
                                     <div class="modal-body">
-                                       <form action="../database/noticias/crear.php" method="POST">
+                                       <form action="../database/noticias/crear.php" method="POST" enctype="multipart/form-data">
                                         <div style="margin-left: 110px;" class="form-field "><br>
-                                            <input   name="imagen" type="file" required>
+                                            <input   name="img" type="file" required>
                                         </div>
                                         <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                             <input style="width: 200px; text-align:center;" id="titulo" name="titulo" class="input-text js-input" placeholder="Titulo" type="text" required>
@@ -56,7 +56,7 @@
                                             <textarea style="width: 200px; text-align:center;" id="descripcion" name="descripcion" placeholder="Descripcion" required></textarea>
                                         </div>
                                         <div style="margin-top:30px; text-align: center;" class="container-ingresar">
-                                            <button type="button" class="btn">Ingresar</button>
+                                            <button type="submit" class="btn">Ingresar</button>
                                         </div>
                                         </form>
                                         
