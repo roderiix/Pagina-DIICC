@@ -77,7 +77,7 @@
                         </thead>
                         <tbody class="tbody">
                             <?php
-                            $sql = "select * from funcionarios where es_academico = 2";
+                            $sql = "select * from funcionarios where es_academico = 0";
                             $resultado = mysqli_query($conexion, $sql);
                             while ($mostrar = mysqli_fetch_array($resultado)) {
                             ?>
