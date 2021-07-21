@@ -63,9 +63,6 @@ include_once "../include/dashboard/head.php";
             </section>
         </div>
     </div>
-    <footer>
-            hola mundo
-    </footer>
 </body>
 
 <script src=<?php echo fromroot($file, "js/vendor/jquery-1.12.0.min.js"); ?>></script>

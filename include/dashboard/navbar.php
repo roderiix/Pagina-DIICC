@@ -8,7 +8,14 @@
             <a href="AdminGestorBT.php">Bolsa de trabajo</a>
             <a href="AdminGestorAcademicos.php">Academicos</a>
             <a href="AdminGestorFuncionarios.php">Funcionarios</a>
+<<<<<<< Updated upstream
         </nav>
         <label for="btn-menu">✖️</label>
     </div>
+=======
+			<a href="AdminGestorEventos.php">Eventos</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+>>>>>>> Stashed changes
 </div>
