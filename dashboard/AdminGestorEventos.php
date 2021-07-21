@@ -40,11 +40,8 @@ include_once fromroot($file, "include/dashboard/head.php", TRUE);
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
-                                    <form action="../database/eventos/crear.php">
-                                        <div class="modal-body">
-                                            <div style="margin-left: 110px;" class="form-field "><br>
-                                                <input name="imagen" type="file" required>
-                                            </div>
+                                    <div class="modal-body">
+                                        <form action="../database/eventos/crear.php">
                                             <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                                 <input style="width: 200px; text-align:center;" id="nombre" name="nombre" class="input-text js-input" placeholder="Nombre" type="text" required>
                                             </div>
@@ -61,12 +58,14 @@ include_once fromroot($file, "include/dashboard/head.php", TRUE);
                                             <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                                 <input style="width: 200px; text-align:center;" id="lugar" name="lugar" class="input-text js-input" placeholder="lugar" type="text" required>
                                             </div>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn " data-dismiss="modal">Cerrar</button>
-                                            <button type="button" class="btn">Ingresar</button>
-                                        </div>
-                                    </form>
+                                            <div class="container-ingresar" style="text-align:center; margin-top: 5px;">
+                                                <button type="submit" class="btn btn-primary">Ingresar</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn " data-dismiss="modal">Cerrar</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
