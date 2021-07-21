@@ -29,12 +29,10 @@ if (!empty($_FILES['img'])){
 	}
 }
 
-$sql = 'INSERT INTO noticias(titulo,fecha,descripcion,img_path ,correo) VALUES (\'\', \'\', \'\', \'\', \'\')';
-$sql = sprintf($sql, $_GET['titulo'], time(), $_GET['descripcion'], $image, $_SESSION['usuario']->correo);
+$sql = 'INSERT INTO noticias(titulo,descripcion,img_path ,correo) VALUES (\'%s\', \'%s\', \'%s\', \'%s\')';
+$sql = sprintf($sql, $_POST['titulo'], $_POST['descripcion'], $image, $_SESSION['usuario']->correo);
+echo $sql;
 $result = $conexion->query($sql);
 
 header(sprintf('Location:%s', fromroot($file, "dashboard/AdminGestorNoticias.php", True)));
-?>
-<?php
-
 ?>

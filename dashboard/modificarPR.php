@@ -22,11 +22,11 @@ include_once "../include/dashboard/head.php";
                 <div class="container-Noticias">
                     <div class="container-formulario">
                         <?php
-                        $sql = sprintf("select * from noticias where id=%s", $_GET['id']);
+                        $sql = sprintf("select * from proyectos where id=%s", $_GET['id']);
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
-                        <form class="form" action="../database/proyectos/modificar.php" method="post">
+                        <form class="form" action="../database/proyectos/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
                                 <input class="form-control" type="file" name="img">
@@ -38,7 +38,7 @@ include_once "../include/dashboard/head.php";
                             </div>
                            <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon3"><i class="bi bi-paint-bucket"></i></span>
-                                <input  class="form-control" name="año" placeholder="Año" <?php echo sprintf('value="%s"',  $mostrar['año']); ?>>
+                                <input  class="form-control" name="año" placeholder="Año" <?php echo sprintf('value="%s"',  strftime('%I:%M %p %d/%m/%Y', strtotime($mostrar['fecha']))) ?>>
                             </div>
                              <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon4"><i class="bi bi-paint-bucket"></i></span>

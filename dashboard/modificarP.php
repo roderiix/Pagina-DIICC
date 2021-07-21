@@ -22,11 +22,11 @@ include_once "../include/dashboard/head.php";
                 <div class="container-Noticias">
                     <div class="container-formulario">
                         <?php
-                        $sql = sprintf("select * from noticias where id=%s", $_GET['id']);
+                        $sql = sprintf("select * from publicaciones where id=%s", $_GET['id']);
                         $resultado = mysqli_query($conexion, $sql);
                         $mostrar = mysqli_fetch_array($resultado);
                         ?>
-                        <form action="../database/publicacion/modificar.php" method="post">
+                        <form action="../database/publicacion/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
                             <div class="input-group">
                                 <input class="form-control" type="file" name="img">
@@ -45,9 +45,14 @@ include_once "../include/dashboard/head.php";
                                 <select name="autor" id="autor">
                                         <?php 
                                             $sql = "select nombre,id from funcionarios where es_academico=1;";
-                                            $resultado = mysqli_query($conexion, $sql);
-                                            while ($mostrar = mysqli_fetch_array($resultado)) {
-                                                echo sprintf(' <option value="%s" >%s</option>',$mostrar['id'],$mostrar['nombre']);
+                                            $resultado2 = mysqli_query($conexion, $sql);
+                                            while ($mostrar2 = mysqli_fetch_array($resultado2)) {
+                                                if ($mostrar['id_academico'] === $mostrar2['id']){
+                                                    echo sprintf(' <option value="%s" selected>%s</option>',$mostrar2['id'],$mostrar2['nombre']);
+                                                }
+                                                else{
+                                                    echo sprintf(' <option value="%s" >%s</option>',$mostrar2['id'],$mostrar2['nombre']);
+                                                }
                                         }?>
                                 </select>
                             </div>
