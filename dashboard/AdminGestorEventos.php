@@ -49,11 +49,29 @@ include_once fromroot($file, "include/dashboard/head.php", TRUE);
                                                 <input style="width: 200px; text-align:center;" id="fecha" name="fecha" class="input-text js-input" placeholder="Fecha" type="date" required>
 
                                             </div>
-                                            <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                                <input style="width: 200px; text-align:center;" id="hora_inicio" name="hora_inicio" class="input-text js-input" placeholder="Hora_inicio" type="text" required>
+                                            <div style="text-align: center;" class="form-field">
+                                                <!--<label for="floatingSelect">Hora Inicio</label>-->
+                                                <select style="width: 200px; text-align:center;" class="form-select" name="hora_inicio" id="hora_inicio" aria-label="Floating label select example">
+                                                    <option style="text-align: center;" value="8:00" selected>8:00</option>
+                                                    <?php
+                                                    for ($i = 9; $i < 24; ++$i) {
+                                                        $hour = "$i:00";
+                                                        echo sprintf('<option value="%s">%s</option>', $hour, $hour);
+                                                    }
+                                                    ?>
+                                                </select>
                                             </div>
-                                            <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                                <input style="width: 200px; text-align:center;" id="hora_termino" name="hora_termino" class="input-text js-input" placeholder="Hora_termino" type="text" required>
+                                            <div style="text-align: center;" class="form-field">
+                                            <!--<label for="floatingSelect">Hora Termino</label>-->
+                                                <select style="width: 200px; text-align:center;" class="form-select" name="hora_termino" id="hora_termino" aria-label="Floating label select example">
+                                                    <option value="8:00" selected>8:00</option>
+                                                    <?php
+                                                    for ($i = 9; $i < 24; ++$i) {
+                                                        $hour = "$i:00";
+                                                        echo sprintf('<option value="%s">%s</option>', $hour, $hour);
+                                                    }
+                                                    ?>
+                                                </select>
                                             </div>
                                             <div class="form-field  " style="text-align:center; margin-top: 5px;">
                                                 <input style="width: 200px; text-align:center;" id="lugar" name="lugar" class="input-text js-input" placeholder="lugar" type="text" required>
