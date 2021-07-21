@@ -40,7 +40,9 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
+                                    
                                     <div class="modal-body">
+                                       <form action="../database/noticias/crear.php" method="POST">
                                         <div style="margin-left: 110px;" class="form-field "><br>
                                             <input   name="imagen" type="file" required>
                                         </div>
@@ -48,20 +50,19 @@
                                             <input style="width: 200px; text-align:center;" id="titulo" name="titulo" class="input-text js-input" placeholder="Titulo" type="text" required>
                                         </div>
                                         <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <input style="width: 200px; text-align:center;" id="fecha" name="fecha" class="input-text js-input" placeholder="Fecha" type="text" required>
-                     
+                                            <input type="hidden" style="width: 200px; text-align:center;" id="correo" name="correo" class="input-text js-input" value="<?php echo $_SESSION['usuario']->correo;?>" placeholder="Correo"  required>
                                         </div>
                                         <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <input style="width: 200px; text-align:center;" id="correo" name="correo" class="input-text js-input" placeholder="Correo" type="text" required>
+                                            <textarea style="width: 200px; text-align:center;" id="descripcion" name="descripcion" placeholder="Descripcion" required></textarea>
                                         </div>
-                                        <div class="form-field  " style="text-align:center; margin-top: 5px;">
-                                            <input style="width: 200px; text-align:center;" id="descripcion" name="descripcion" class="input-text js-input" placeholder="Descripcion" type="text" required>
+                                        <div style="margin-top:30px; text-align: center;" class="container-ingresar">
+                                            <button type="button" class="btn">Ingresar</button>
                                         </div>
+                                        </form>
+                                        
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn " data-dismiss="modal">Cerrar</button>
-                                        <button type="button" class="btn">Ingresar</button>
-                                    </div>
+                                   
+                                    
                                 </div>
                             </div>
                         </div>
@@ -72,7 +73,6 @@
                                 <th scope="col">Imagen</th>
                                 <th scope="col">Titulo</th>
                                 <th scope="col">Fecha de publicacion</th>
-                                <th scope="col">Descripcion</th>
                                 <th scope="col">Correo</th>
                                 <th scope="col">Accion</th>
                             </tr>
@@ -90,9 +90,6 @@
                                     </td>
                                     <td>
                                         <p style="text-align: center;"><small class="text-muted"><?php echo $mostrar['fecha']; ?></small></p>
-                                    </td>
-                                    <td>
-                                        <p style="text-align: center;"><small class="text-muted"><?php echo $mostrar['descripcion']; ?></small></p>
                                     </td>
 
                                     <td>
