@@ -112,9 +112,6 @@
             </section>
         </div>
     </div>
-    <footer>
-            hola mundo
-    </footer>
 </body>
 
 <?php include_once fromroot($file, "include/dashboard/footer.php", TRUE); ?>
