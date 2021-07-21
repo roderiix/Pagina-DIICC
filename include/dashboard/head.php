@@ -1,8 +1,8 @@
 <head>
-    <meta charset="UTF-8">
-    <title>Departamento de Informatica</title>
-    <link rel="stylesheet" href="../css/dashboard/administrador_Menu.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href=<?php echo fromroot($file, "css/bootstrap.min.css"); ?>>
+	<meta charset="UTF-8">
+	<title><?php echo $pagetitle;?></title>
+	<link rel="stylesheet" href="../css/dashboard/administrador_Menu.css">
+	<link rel="stylesheet" href=<?php echo fromroot($file, "css/bootstrap.min.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/animate.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/meanmenu.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/magnific-popup.css");  ?>>

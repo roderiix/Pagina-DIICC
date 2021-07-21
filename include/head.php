@@ -17,7 +17,7 @@
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/reset.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/ionicons.min.css"); ?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/material-design-iconic-font.min.css"); ?>>
-    <link rel="stylesheet" href=<?php echo fromroot($file, "css/style.css"); ?>>
+    <link rel="stylesheet" href=<?php echo fromroot($file, "css/style.css?v="); echo time();?>>
     <link rel="stylesheet" href=<?php echo fromroot($file, "css/responsive.css"); ?>>
     <script src=<?php echo fromroot($file, "js/vendor/modernizr-2.8.3.min.js"); ?>></script>
 </head>

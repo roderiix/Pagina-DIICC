@@ -13,6 +13,7 @@
         <?php include_once "../include/header2.php";?>
         <!-- HEADER -->
          <!-- Blog Start -->
+
         <div class="blog-details-area pt-150 pb-140">
             <div class="container">
                 <div class="row">

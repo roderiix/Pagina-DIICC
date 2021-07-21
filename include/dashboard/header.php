@@ -3,13 +3,13 @@
         <div class="btn-menu">
             <label for="btn-menu">☰</label>
         </div>
-        <div class="logo">
-            <img src="../img/logo/logoudablanco2.png" alt="">
-        </div>
+        <a class="logo" href=<?php echo  fromroot($file, "index.php"); ?>>
+            <img src=<?php echo fromroot($file, "img/logo/logoudablanco2.png"); ?> alt="">
+        </a>
         <nav class="menu">
-            <a href="index.html">Inicio</a>
+            <a href=<?php echo fromroot($file, "dashboard/"); ?>>Inicio</a>
             <a href="#">Mi perfil</a>
-            <a href="#">Desconectarse</a>
+            <a href=<?php echo fromroot($file, "database/logout.php"); ?>>Desconectarse</a>
         </nav>
     </div>
 </header>
