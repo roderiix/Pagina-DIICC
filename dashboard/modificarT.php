@@ -28,14 +28,14 @@ include_once "../include/dashboard/head.php";
                         ?>
                         <form class="form" action="../database/trabajo/modificar.php" method="post" enctype="multipart/form-data">
                             <input type="hidden" name='id' <?php echo sprintf('value="%s"', $_GET['id']); ?>>
+
                             <div class="input-group">
                                 <input class="form-control" type="file" name="img">
                                 <span class="input-group-addon" id="basic-addon1"><i class="bi bi-file-image"></i></span>
                             </div>
                             <div class="input-group">
-
-                                <span class="input-group-addon" id="basic-addon2">@</span>
-                                <input type="text" name='titulo' class="form-control" placeholder="Titulo" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',  $mostrar['cargo']); ?>>
+                                <span class="input-group-addon" id="basic-addon2"><i class="bi bi-paint-bucket"></i></span>
+                                <input type="text" name='cargo' class="form-control" placeholder="Titulo" aria-describedby="basic-addon1" <?php echo sprintf('value="%s"',$mostrar['cargo']); ?>>
                             </div>
                            <div class="input-group">
                                 <span class="input-group-addon" id="basic-addon6"><i class="bi bi-paint-bucket"></i></span>
